@@ -48,7 +48,6 @@ jobs:
 
   build-and-push-docker:
     runs-on: ubuntu-latest
-    # CAMBIO AQUÍ: Ahora depende directamente de Snyk, saltándose SonarCloud
     needs: analisis-vulnerabilidad
     steps:
       - name: Checkout repository
